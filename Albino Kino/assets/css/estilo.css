@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #14171C;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+#titulo{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: #556678;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: none;
+    background-color: #2C343F;
+    color: #cccccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+body{
+    background-color: #2C343F;
+    color: #cccccc;
+}
+#destaques, #filmes, #series{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+#oscars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+#oscars1{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    text-align: justify;
+    margin-right: 50px;
+}
+#img_oscars{
+    width: 500px;
+}
+figcaption {
+    background-color: #14171C;
+    color: #cccccc;
+    padding: 3px 0px 3px 0px;
+    text-align: center;
+}
+#poor_things{
+    width: 400px;
+}
+.oscars_posters{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+#poster{
+    width: 150px;
+    margin: 10px;
+}
+#estreia{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    flex-direction: column;
+    margin: 20px;
+    text-align: justify;
+}
+#estreia iframe{
+    width: 100%;
+    height: 70vh;
+    margin: 10px 0px 10px 0px;
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.botoes a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #cccccc;
+}
+.botoes a:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+.botao img{
+    height: 100%;
+}
+.filmes, .series{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#filme, #serie{
+    width: 150px;
+    margin: 10px;
+}
+footer{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #14171C;
+    text-align: center;
+    color: #cccccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+.botao_flutuante{
+    background-color: #14171C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+    border-radius: 100%;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+.botao_flutuante:hover{
+    opacity: 80%;
+}
+
+@media (max-width: 1133px) {
+    #oscars{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #oscars1, #estreia{
+        text-align: center;
+        display: flex;
+        width: 90%;
+        margin: 0px 0px 20px 0px;
+    }
+    #oscars1 p{
+        text-align: justify;
+        margin-top: 10px;
+    }
+    #img_oscars{
+        width: 85vw;
+    }
+    #poor_things{
+        width: 85vw;
+    }
+    .oscars_posters, #filmes, #series{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    #poster{
+        width: 40vw;
+    }
+    nav, nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .botoes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .botoes img{
+        height: 100%;
+    }
+}
+@media (max-width: 490px) {
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 10px;
+    }
+
+}

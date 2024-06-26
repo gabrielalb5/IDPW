@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Albino"></meta>
+    <link rel="icon" type="image/x-icon" href="image/cavalo.png">
+    <title>Cowboy Carter | CSS Interno</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to bottom, #a41e2b, 0%, #a41e2b, 20%, white 20%, white 80%, #5e3c31 80%, #5e3c31 100%);
+        }
+        header img{
+            height: 45px;
+        }
+        main{
+            color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            text-align: justify;
+            flex-direction: column;
+        }
+        article img{
+            float: right;
+            width: 40%;
+            margin: 10px;
+        }
+        h1{
+            display: none;
+        }
+        h2{
+            font-family: "Neuton", sans-serif;
+        }
+        #faixas{
+            background-color: #f5f5f5;
+            margin-top: 20px;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 70vw;
+            padding: 20px 0 20px 0;
+            border-radius: 10px;
+        }
+        #faixas h2{
+            margin: 15px 0 0 0;
+        }
+        ol{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            list-style-position: inside;
+        }
+        li{
+            width: 25%;
+            background-color: #5e3c31;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 5px;
+            color: #f5f5f5;
+        }
+        li a{
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+        li:hover{
+            opacity: 70%;
+            transition: 0.3s;
+        }
+        footer{
+            background: linear-gradient(to bottom, #5e3c31, 0%, #5e3c31, 10%, #f5f5f5 10%, #f5f5f5 100%);
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer :first-child{
+            font-size: 30px;
+            margin: 13px 0 -10px 0;
+        }
+
+        @media screen and (max-width: 1000px){
+            article{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 80vw;
+            }
+            article img{
+                width: 50vw;
+            }
+            ol{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+            li{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COWBOY CARTER</h1>
+        <img src="image/cowboycarter_logo.png" alt="Cowboy Carter">
+    </header>
+    <main>
+        <article id="actii">
+            <img src="image/cowboy_carter2.jpg" alt="Capa do álbum Cowboy Carter">
+            <h2>★ CONHEÇA O ACT II</h2>
+            <p>Cowboy Carter (também intitulado como Act II: Cowboy Carter) é o oitavo álbum de estúdio da cantora americana, Beyoncé. Lançado no dia 29 de março de 2024, através da Parkwood Entertainment e Columbia Records, o álbum é segunda parte de uma trilogia de projetos, que começou com Renaissance (2022). Primariamente descrito como um álbum country, o projeto mistura vários gêneros, incluindo elementos de pop, ópera, house, rock clássico, hip-hop, blues, soul, rock, gospel, R&B e folk.</p>
+            <p>Conceitualmente, o álbum é apresentado como transmissão de uma estação de rádio fictícia do Texas, com os cantores country Dolly Parton, Linda Martell e Willie Nelson atuando como DJs da rádio. O álbum contém colaborações com os artistas country em ascensão Tanner Adell, Brittney Spencer, Tiera Kennedy, Reyna Roberts, Shaboozey e Willie Jones, e também conta com contribuições de músicos como Miley Cyrus, Post Malone, Rhiannon Giddens, Stevie Wonder, Nile Rodgers, Raye, Ryan Beatty e Jon Batiste.</p>
+            <p>Após o lançamento, Cowboy Carter foi aclamado pela crítica pela adoção da música country por Beyoncé no contexto de celebrar as raízes negras do gênero, com ênfase na performance vocal e nas letras. As publicações opinaram que o álbum destacou o lugar dos artistas negros na música country, acarretando um aumento na audiência de artistas country negros em plataformas de streaming e rádios country.</p>
+        </article>
+        <section id="faixas">
+            <h2>★ FAIXAS ★</h2>
+            <ol>
+                <li><a href="https://youtu.be/vp3BSjJdyow?si=Im_UGG2ToDvQACyQ" target="_blank">AMERIICAN REQUIEM</a></li>
+                <li><a href="https://youtu.be/xhempeEjGUA?si=jEE2kLfqtV9IUTwB" target="_blank">BLACKBIIRD</a></li>
+                <li><a href="https://youtu.be/hhKNjTb6U1Y?si=pjVzv5zi210cTT0P" target="_blank">16 CARRIAGES</a></li>
+                <li><a href="https://youtu.be/f4xrblI8Tvw?si=XO75_bZzZe0zShJU" target="_blank">PROTECTOR</a></li>
+                <li><a href="https://youtu.be/VWfSNezeQCc?si=4Os1lhF0iAe7I9AX" target="_blank">MY ROSE</a></li>
+                <li><a href="https://youtu.be/sYG3YiyqY7U?si=D0QGtP-TZDyCBiBH" target="_blank">SMOKE HOUR ★ WILLIE NELSON</a></li>
+                <li><a href="https://youtu.be/238Z4YaAr1g?si=ulxtuHejDncFIcv3" target="_blank">TEXAS HOLD 'EM</a></li>
+                <li><a href="https://youtu.be/7HV_Rv858YM?si=bgZZkkCWP5poEeFb" target="_blank">BODYGUARD</a></li>
+                <li><a href="https://youtu.be/j_mEC6UNIJg?si=-eEI-M9GG5x3lt9w" target="_blank">DOLLY P</a></li>
+                <li><a href="https://youtu.be/x9XHMK3nWr4?si=wIgXpTfkw5gUKN5C" target="_blank">JOLENE</a></li>
+                <li><a href="https://youtu.be/cjeC0zNqigo?si=D5uVys6dQIYFhuGm" target="_blank">DAUGHTER</a></li>
+                <li><a href="https://youtu.be/MxNMvZ5BhSU?si=s5SQEQQ8MdeomhAB" target="_blank">SPAGHETTII</a></li>
+                <li><a href="https://youtu.be/OuSCmrRPcFI?si=vV9Yl7yz2F5zm0su" target="_blank">ALLIIGATOR TEARS</a></li>
+                <li><a href="https://youtu.be/8FE9z3btl9Q?si=yTQdepaqE11u06xd" target="_blank">SMOKE HOUR II</a></li>
+                <li><a href="https://youtu.be/vSZCl3Qs9rA?si=byXQvJZRorRhnH2X" target="_blank">JUST FOR FUN</a></li>
+                <li><a href="https://youtu.be/SyXfJi2KZ-A?si=kNB1aqxAnq2zonLX" target="_blank">II MOST WANTED</a></li>
+                <li><a href="https://youtu.be/esnhbIbQHgM?si=OyPCX_NNP3fG7ypI" target="_blank">LEVII'S JEANS</a></li>
+                <li><a href="https://youtu.be/SKQcy3JDrAQ?si=ue-tXOxwIxssAecc" target="_blank">FLAMENCO</a></li>
+                <li><a href="https://youtu.be/wSIQi2wMbbI?si=zK1eEapTQJGYC-t4" target="_blank">THE LINDA MARTELL SHOW</a></li>
+                <li><a href="https://youtu.be/Ma8X2iMdv8U?si=eDxHs_FVcIrxeOnr" target="_blank">YA YA</a></li>
+                <li><a href="https://youtu.be/YAWjXmdq8gw?si=uXGVJt7YyGXpQXd5" target="_blank">OH LOUISIANA</a></li>
+                <li><a href="https://youtu.be/FpXJR3YYius?si=d-vpFaOFS4H4LjIB" target="_blank">DESERT EAGLE</a></li>
+                <li><a href="https://youtu.be/AO8oJ1OHLHU?si=7-gUUf2bxMyuDd1Y" target="_blank">RIIVERDANCE</a></li>
+                <li><a href="https://youtu.be/tJ8CfpXajdo?si=IesgWdj_Q9sop-VX" target="_blank">II HANDS II HEAVEN</a></li>
+                <li><a href="https://youtu.be/bgtuQptR1U4?si=gvwdcEt9HnXeqh7f" target="_blank">TYRANT</a></li>
+                <li><a href="https://youtu.be/9DIBZX_v0-U?si=jyEHT5n9BY6a7V0p" target="_blank">SWEET ★ HONEY ★ BUCKIIN'</a></li>
+                <li><a href="https://youtu.be/Nx3WuoxlvcM?si=NCrI5JlPrQN9u1p0" target="_blank">AMEN</a></li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>★</p>
+        <p>ESSE SITE FOI ESTILIZADO COM CSS INTERNO</p>
+        <p>Gabriel Albino - Introdução ao Desenvolvimento de Páginas Web - TSI</p>
+        <p>Copyright© 2024 IFSP - Campus Araraquara</p>
+    </footer>
+</body>
+</html>
