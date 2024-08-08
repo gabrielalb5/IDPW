@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" value="Gabriel Albino">
-    <title>5.2.4</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Portfólio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         body{
@@ -13,18 +14,26 @@
             color: #445964;
             font-size: 20px;
         }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
         #logo{
             display: flex;
             align-items: center;
         }
-        main, nav ul{
+        nav, main, nav ul{
             display: flex;
             align-items: center;
             justify-content: center;
         }
         nav{
-            display: flex;
-            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+            background-color: #fbfbfb;
+            width: 100%;
+            top: 0;
+            z-index: 1;
         }
         nav ul{
             list-style: none;
@@ -35,6 +44,9 @@
             color: #445964;
         }
         #home{
+            min-height: 100vh;
+        }
+        #home{
             display: flex;
             width: 70%;
             justify-content: center;
@@ -43,11 +55,140 @@
         #direita img{
             width: 100%;
         }
-        #esquerda{
+        #esquerda, #direita{
+            width: 100%;    
+        }
+        #esquerda h1{
+            font-size: 45px;
+        }
+        #sobre img{
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            object-fit: cover;
+        }
+        .hex{
+            height: 200px;
+            aspect-ratio: cos(30deg);
+            clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+        }
+        
+        #sobre img:hover{
+            filter: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #sobre div{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        #sobre{
+            width: 60%;
+            text-align: center;
+            min-height: 90vh;
+        }
+        #sobre p{
+            font-size: 15px;
+        }
+        #sobre .badge{
+            height: 35px;
+        }
+        #portfolio{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+        }
+        #cards{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        #cards .card img{
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        #cards .card img{
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            object-fit: cover;
+            opacity: 70%;
+        }
+        #cards .card img:hover{
+            filter: none;
+            cursor: pointer;
+            transition: 0.3s;
+            opacity: 1;
+        }
+        #sobre{
+            scroll-margin-top: 100px;
+        }
+        #portfolio{
             width: 100%;
         }
-        #direita{
+        #contato{
+            background-color: #263138;
+            color: #fbfbfb;
             width: 100%;
+            margin: 200px 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 200px;
+            width: 30%;
+        }
+        textarea{
+            min-height: 300px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+            margin: 5px 0 0 0;
+        }
+        button{
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #263138;
+            border: 1px solid #fbfbfb;
+            color: #fbfbfb;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: #fbfbfb;
+            color: #263138;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        #contato p{
+            font-size: 15px;
+        }
+        #contato a{
+            color: #82a6ba;
+            text-decoration: none;
+        }
+        input{
+            width: 97%;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -59,22 +200,66 @@
                 <h1>Gabriel Albino</h1>
             </div>
             <ul>
-                <a href=""><li>home</li></a>
-                <a href=""><li>portfólio</li></a>
-                <a href=""><li>contato</li></a>
+                <a href="#home"><li>home</li></a>
+                <a href="#sobre"><li>sobre</li></a>
+                <a href="#portfolio"><li>portfólio</li></a>
+                <a href="#contato"><li>contato</li></a>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home">
             <div id="esquerda">
-                <p>Olá mundo! Eu sou um</p>
+                <p>Olá, mundo! Eu sou um</p>
                 <h1>DESENVOLVEDOR<br>DE PÁGINAS WEB</h1>
                 <p>Bem-vindos ao meu site-portfólio</p>
             </div>
             <div id="direita">
                 <img src="ilustracao.svg" alt="ilustração">
             </div>
+        </section>
+        <section id="sobre">
+            <div>
+                <img src="gabriel.jpeg" alt="Gabriel Albino" class="hex">
+            </div>
+            <h2>Gabriel Albino</h2>
+            <p>Sou estudante de Sistemas para Internet do IFSP e Técnico em Informática formado pela mesma instituição. Tive como principal linguagem de programação o PHP (que eu amo, por sinal), mas também sou apaixonado por front-end.</p>
+            <h3>Hard Skills</h3>
+            <img class="badge" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript Badge">
+            <img class="badge" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C Badge">
+            <img class="badge" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3 Badge">
+            <img class="badge" src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Badge">
+            <img class="badge" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP Badge">
+            <img class="badge" src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap Badge">
+            <img class="badge" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Badge">
+        </section>
+        <section id="portfolio">
+            <h2>Meu Portfólio</h2>
+            <div id="cards">
+                <a href="https://gabrielalb5.github.io/IDPW/Albino%20Kino/public/">
+                    <div class="card"><img src="1.png" alt=""></div>
+                </a>
+                <a href="https://gabrielalb5.github.io/IDPW/Terno%20Rei/">
+                    <div class="card"><img src="3.png" alt=""></div>
+                </a>
+                <a href="https://gabrielalb5.github.io/IDPW/Maionese%20Viagens/">
+                    <div class="card"><img src="2.png" alt=""></div>
+                </a>
+                <a href="https://gabrielalb5.github.io/IDPW/Beyonc%C3%A9%20-%20tipos%20de%20css/externo.html">
+                    <div class="card"><img src="4.png" alt=""></div>
+                </a>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="">
+                <input type="email" name="" id="" placeholder="Seu e-mail">
+                <input type="text" name="" id="" placeholder="Seu nome">
+                <input type="text" name="" id="" placeholder="Assunto">
+                <textarea name="" id="" placeholder="Escreva uma mensagem..."></textarea>
+                <button>Enviar</button>
+            </form>
+            <p>ou envie um e-mail para <a href="mailto:gabriel.albino@contato.com">gabriel.albino@contato.com</a></p>
         </section>
     </main>
 </body>
