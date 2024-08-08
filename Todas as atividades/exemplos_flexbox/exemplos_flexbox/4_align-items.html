@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 250px; /* Altura do contêiner ajustada para 250 px*/
+    }
+    .item {
+      background-color: #001f3f; 
+      color: #ffdd57;
+      padding: 20px;
+      margin: 5px;
+      font-size: 24px;
+      text-align: center;
+      width: 100px; /* Largura fixa para os itens */
+    }
+    .item.a { height: 50px; }  /* Altura específica para o bloco A */
+    .item.b { height: 100px; } /* Altura específica para o bloco B */
+    .item.c { height: 150px; } /* Altura específica para o bloco C */
+    .item.d { height: 200px; } /* Altura específica para o bloco D */
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+  <title>Exemplos Align-items</title>
+</head>
+<body>
+  <h1>Exemplos de Utilização da Propriedade Align-items</h1>
+
+  <h2>Align-items: flex-start</h2>
+  <div class="container" style="align-items: flex-start;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+  </div>
+  <p>Os blocos são alinhados ao início do contêiner (parte superior).</p>
+
+  <h2>Align-items: flex-end</h2>
+  <div class="container" style="align-items: flex-end;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+  </div>
+  <p>Os blocos são alinhados ao final do contêiner (parte inferior).</p>
+
+  <h2>Align-items: center</h2>
+  <div class="container" style="align-items: center;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+  </div>
+  <p>Os blocos são centralizados no eixo transversal do contêiner.</p>
+
+  <h2>Align-items: baseline</h2>
+  <div class="container" style="align-items: baseline;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+  </div>
+  <p>Os blocos são alinhados de acordo com suas linhas de base.</p>
+
+  <h2>Align-items: stretch</h2>
+  <div class="container" style="align-items: stretch;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+  </div>
+  <p>Os blocos são esticados para preencher o contêiner. (Nota: neste caso, o efeito não será visível pois os itens já têm alturas definidas.)</p>
+
+</body>
+</html>

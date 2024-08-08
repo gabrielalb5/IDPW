@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Albino">
+    <link rel="stylesheet" href="3.2.css">
+    <title>3.2</title>
+</head>
+<body>
+    <section>
+        <h1>Vantagens e desvantagens de tipos de CSS em tabelas</h1>
+        <article>
+        <h2>Inline</h2>
+        <h3>Vantagens</h3>
+        <ul>
+            <li>Não há necessidade de utilizar arquivos separados</li>
+            <li>Personalização extremamente específica</li>
+        </ul>
+        <h3>Desvantagens</h3>
+        <ul>
+            <li>Difícil manutenção</li>
+            <li>Dificuldade de reutilizar estilos</li>
+            <li>Menos flexibilidade para aplicar estilos condicionais ou estilos específicos para diferentes estados (como hover, foco, etc.)</li>
+        </ul>
+        <table border="1" style="border-collapse: collapse; width: 50%; margin: 20px auto;">
+            <caption>Exemplo de Tabela com css inline</caption>
+            <thead>
+                <tr style="background-color: black; color: white;">
+                    <th>Alimento</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="background-color: indigo;">Maçã</td>
+                    <td style="background-color: purple;">3 unidades</td>
+                </tr>
+                <tr>
+                    <td style="background-color: blue;">Pera</td>
+                    <td style="background-color: aqua;">2 unidades</td>
+                </tr>
+                <tr>
+                    <td style="background-color: darkcyan;">Banana</td>
+                    <td style="background-color: green;">5 unidades</td>
+                </tr>
+                <tr>
+                    <td style="background-color: yellow;">Abacaxi</td>
+                    <td style="background-color: gold;">1 unidade</td>
+                </tr>
+                <tr>
+                    <td style="background-color: orange;">Laranja</td>
+                    <td style="background-color: chocolate;">4 unidades</td>
+                </tr>
+                <tr>
+                    <td style="background-color: red;">Morango</td>
+                    <td style="background-color: saddlebrown;">250g</td>
+                </tr>
+            </tbody>
+        </table>
+        </article>
+        <article>
+        <h2>Externo</h2>
+        <h3>Vantagens</h3>
+        <ul>
+            <li>Reutilização de estilos, padrões</li>
+            <li>Fácil manutenção</li>
+            <li>Suporte a Media Queries e Pseudoclasses</li>
+            <li>Separação de Responsabilidades (HTML do CSS, facilitando trabalho em equipe)</li>
+        </ul>
+        <h3>Desvantagens</h3>
+        <ul>
+            <li>Necessidade de Referência Externa</li>
+        </ul>
+            <table id="tabela_alimentos">
+                <caption>Exemplo de Tabela com css externo</caption>
+                <thead>
+                    <tr>
+                        <th>Alimento</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maçã</td>
+                        <td>3 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>Pera</td>
+                        <td>2 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>Banana</td>
+                        <td>5 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>Abacaxi</td>
+                        <td>1 unidade</td>
+                    </tr>
+                    <tr>
+                        <td>Laranja</td>
+                        <td>4 unidades</td>
+                    </tr>
+                    <tr>
+                        <td>Morango</td>
+                        <td>250g</td>
+                    </tr>
+                </tbody>              
+            </table>
+        </article>
+        <a href="https://chatgpt.com" target="_blank">Fonte</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Albino">
+    <title>Diferenças de CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            font-family: "Inter", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+        }
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 80%;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        article{
+            text-align: center;
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 25%;
+            margin: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+            text-align: justify;
+        }
+        table, th, td{
+            border: 3px solid #f5f5f5;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        table{
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        #referencias h2{
+            margin-bottom: 0;
+        }
+        #referencias a{
+            color: #435277;
+            text-decoration: none;
+        }
+        #referencias a:hover{
+            opacity: 70%;
+        }
+        pre{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+        <h1>Diferenças entre CSS Inline, Interno e Externo</h1>
+        <div class="cards">
+            <section class="card">
+                <h2>Inline</h2>
+                <p>O CSS Inline é aplicado dentro de uma tag específica no documento HTML usando o atributo "style". Essa prática não é recomendada, já que é mais complicado atribuir estilos individualmente para tags que seguem um mesmo padrão, por exemplo. A manutenção também pode demorar mais com o uso desse tipo de estilização. Os casos em que pode ser útil são em páginas em que você não tem acesso ao arquivo de CSS ou quando precisar aplicar estilo em apenas um elemento. Exemplo:</p>
+                <p>HTML</p>
+                <pre>&lt;p style="color: red;"&gt;TEXTO AQUI&lt;/p&gt;</pre>
+                <p>Resultado</p>
+                <p style="margin-top: 0; color: red;">TEXTO AQUI</p>
+            </section>
+            <section class="card">
+                <h2>Interno</h2>
+                <p> O CSS Interno é adicionado na seção head da página HTML, aplicando todas as características de estilo dentro da tag &lt;style&gt;&lt;/style&gt;. Nesse caso não há necessidade de carregar vários arquivos (HTML e CSS esão no mesmo arquivo), entretanto, apenas a página que contém esses estilo é afetada e pode haver o aumento do tempo de carregamento da página. Exemplo:</p>
+                <p>HTML</p>
+                <pre>
+&lt;head&gt;
+    &lt;style&gt;
+        p{
+            color: blue;
+        };
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;TEXTO AQUI&lt;/p&gt;
+&lt;/body&gt;
+                </pre>
+                <p>Resultado</p>
+                <p style="margin-top: 0; color: blue;">TEXTO AQUI</p>
+            </section>
+            <section class="card">
+                <h2>Externo</h2>
+                <p>O CSS Externo é a maneira mais conveniente de estilizar as páginas HTML. O CSS, nesse caso, fica em um arquivo separado e afeta todas as páginas que o tiverem como referência. Deve-se fazer uma referência a um arquivo ".css" dentro da seção head através da tag &lt;link&gt;. Exemplo:</p>
+                <p>HTML</p>
+                <pre>
+&lt;head&gt;
+    &lt;link rel="stylesheet"
+    type="text/css"
+    href="estilo.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;TEXTO AQUI&lt;/p&gt;
+&lt;/body&gt;
+                </pre>
+                <p>estilo.css</p>
+                <pre>
+p{
+    color: gold;
+};
+                </pre>
+                <p>Resultado</p>
+                <p style="margin-top: 0; color: gold;">TEXTO AQUI</p>
+            </section>
+        </div>
+        </article>
+        <section>
+            <h2>Tabela comparativa</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Vantagens</th>
+                        <th>Desvantagens</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inline</td>
+                        <td>
+                            <ul>
+                                <li>Útil se você quiser testar e visualizar alterações.</li>
+                                <li>Útil para correções rápidas.</li>
+                                <li>Reduzir solicitações HTTP.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>CSS Inline deve ser aplicado a cada elemento.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Interno</td>
+                        <td>
+                            <ul>
+                                <li>Apenas uma página é afetada pela pagina de estilos.</li>
+                                <li>Classes e IDs podem ser usados ​​por stylesheet interno.</li>
+                                <li>Não há necessidade de carregar vários arquivos. HTML e CSS podem estar no mesmo arquivo.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Aumento do tempo de carregamento da página.</li>
+                                <li>Ela afeta apenas uma página – não é útil se você quiser usar o mesmo CSS em vários documentos.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Externo</td>
+                        <td>
+                            <ul>
+                                <li>Tamanho menor de páginas HTML e estrutura mais limpa.</li>
+                                <li>Velocidade de carregamento mais rápida.</li>
+                                <li>O mesmo arquivo ".css" pode ser usado em várias páginas.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Até que o CSS externo seja carregado, a página pode não ser processada corretamente</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="referencias">
+            <h2>Referências</h2>
+            <p style="font-size: 18px;"><a href="https://www.alessiojr.com/disciplinas/conteudos/css/diferenca-entre-estilos-css.html" target="_blank">AléssioJr</a> e <a href="https://www.dio.me/articles/qual-a-diferenca-entre-css-inline-interno-e-externo" target="_blank">Dio</a></p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" value="Gabriel Albino">
+    <title>5.2.3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+            font-size: small;
+        }
+        table img {
+            height: 100px;
+        }
+        table, td, th {
+            border: 1px solid #f5f5f5;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        table {
+            width: 80%;
+        }
+        tbody tr:hover td:nth-child(2),
+        tbody tr:hover td:nth-child(3) {
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+        td:first-of-type, th:first-of-type {
+            background-color: #dc4c25;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Principais diferenças entre HTML 4 e HTML 5</h1>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Aspecto</th>
+                    <th><img src="html4.gif" alt="html4"></th>
+                    <th><img src="html5.png" alt="html5"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Estrutura e Semântica</td>
+                    <td>Usava &lt;div&gt; e &lt;span&gt; para layout e estrutura.</td>
+                    <td>Introduziu elementos semânticos como &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;nav&gt;, e &lt;aside&gt;.</td>
+                  </tr>
+                  <tr>
+                    <td>Formulários</td>
+                    <td>Conjunto básico de elementos de formulário.</td>
+                    <td>Novos tipos de entrada como email, url, range, date, color, entre outros. Melhorias em validação e usabilidade.</td>
+                  </tr>
+                  <tr>
+                    <td>Multimídia</td>
+                    <td>Requeria plugins externos (ex: Flash) para áudio e vídeo.</td>
+                    <td>Introduziu &lt;audio&gt; e &lt;video&gt; para suporte nativo a mídia.</td>
+                  </tr>
+                  <tr>
+                    <td>Canvas e SVG</td>
+                    <td>Não tinha suporte nativo para gráficos dinâmicos.</td>
+                    <td>Inclui o elemento &lt;canvas&gt; para gráficos dinâmicos e aprimorou o suporte a SVG.</td>
+                  </tr>
+                  <tr>
+                    <td>APIs e Integração</td>
+                    <td>Suporte limitado para JavaScript e APIs externas.</td>
+                    <td>Novas APIs como geolocalização, armazenamento local (localStorage e sessionStorage), histórico, e arrastar e soltar.</td>
+                  </tr>
+                  <tr>
+                    <td>Desempenho e Armazenamento</td>
+                    <td>Utilizava cookies para armazenamento e tinha mecanismos de cache limitados.</td>
+                    <td>Introduziu Web Storage API para armazenamento local e sessões, e Cache API para recursos offline.</td>
+                  </tr>
+                  <tr>
+                    <td>Acessibilidade</td>
+                    <td>Suporte limitado para acessibilidade.</td>
+                    <td>Melhorou a acessibilidade com novos elementos semânticos que auxiliam tecnologias assistivas.</td>
+                  </tr>
+                  <tr>
+                    <td>Compatibilidade com Dispositivos Móveis</td>
+                    <td>Não otimizado para dispositivos móveis.</td>
+                    <td>Melhor compatibilidade com dispositivos móveis, suporte a modo offline e construção de aplicações web responsivas.</td>
+                  </tr>
+                  <tr>
+                    <td>Doctype</td>
+                    <td>Requeria uma declaração de doctype mais complexa.</td>
+                    <td>Doctype simplificado (&lt;!DOCTYPE html&gt;) para facilidade de uso e memorização.</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+    </main>
+</body>
+</html>

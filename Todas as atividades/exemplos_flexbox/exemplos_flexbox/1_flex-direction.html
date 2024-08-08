@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .item {
+      background-color: #001f3f;
+      color: #ffdd57;
+      padding: 20px;
+      margin: 5px;
+      font-size: 24px;
+      text-align: center;
+      flex: 1; /* Permite que todos os itens tenham o mesmo tamanho */
+    }
+    /* A propriedade flex é uma abreviação para três propriedades individuais: flex-grow, flex-shrink e flex-basis. */
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+  <title>Exemplos Flex-direction</title>
+</head>
+<body>
+  <h1>Exemplos de Utilização da Propriedade Flex-direction</h1>
+
+  <h2>Flex-direction: row</h2>
+  <div class="container" style="flex-direction: row;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+  <p>Os blocos são exibidos em uma linha, da esquerda para a direita.</p>
+
+  <h2>Flex-direction: row-reverse</h2>
+  <div class="container" style="flex-direction: row-reverse;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+  <p>Os blocos são exibidos em uma linha, da direita para a esquerda.</p>
+
+  <h2>Flex-direction: column</h2>
+  <div class="container" style="flex-direction: column;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+  <p>Os blocos são exibidos em uma coluna, de cima para baixo.</p>
+
+  <h2>Flex-direction: column-reverse</h2>
+  <div class="container" style="flex-direction: column-reverse;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+  <p>Os blocos são exibidos em uma coluna, de baixo para cima.</p>
+
+</body>
+</html>

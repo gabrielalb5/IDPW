@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" value="Gabriel Albino">
+    <title>3.2.4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Poppins", sans-serif;
+            background-color: lightsteelblue;
+        }
+        select, form>input{
+            padding: 10px;
+            width: 100%;
+            margin: 0 0 20px 0;
+            border-radius: 10px;
+            border: none;
+        }
+        select, #botao{
+            width: 104.5%;
+        }
+        form{
+            background-color: #f5f5f5;
+            padding: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #3b4c53;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+        }
+        img{
+            height: 100px;
+            margin: -10px 0 20px 0;
+        }
+        #botao{
+            color: #f5f5f5;
+            background-color: #3b4c53;
+            font-weight: bold;
+        }
+        #botao:hover{
+            cursor: pointer;
+            opacity: 70%;
+        }
+        div, form>input{
+            margin: 5px 0 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="processar.php" method="post">
+        <h2>Pacotes de turismo</h2>
+        <img src="aviao.png" alt="imagem de aviao">
+
+        <label for="tipo_pacote">Tipo de Pacote</label>
+        <select name="tipo_pacote" id="tipo_pacote" required>
+            <option value="">Selecione...</option>
+            <option value="individual">Individual</option>
+            <option value="familia">Família</option>
+            <option value="luxo">Luxo</option>
+        </select>
+        
+        <label for="destino">Destino</label>
+        <select name="destino" id="destino" required>
+            <option value="">Selecione...</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tóquio</option>
+            <option value="sydney">Sydney</option>
+            <option value="guize">Guizé</option>
+        </select>
+        
+        <label for="dias">Quantidade de Dias (3 a 15 dias)</label>
+        <input type="number" name="dias" id="dias" min="3" max="15" required>
+        
+        <div>
+            <label>Serviço de SPA</label><br>
+            <input type="radio" name="spa" id="spa_sim" value="sim">
+            <label for="spa_sim">Sim</label><br>
+            <input type="radio" name="spa" id="spa_nao" value="nao" checked>
+            <label for="spa_nao">Não</label>
+        </div>
+        
+        <div>
+            <label>Transporte Aeroporto-Hotel</label><br>
+            <input type="radio" name="transporte_aeroporto" id="transporte_sim" value="sim">
+            <label for="transporte_sim">Sim</label><br>
+            <input type="radio" name="transporte_aeroporto" id="transporte_nao" value="nao" checked>
+            <label for="transporte_nao">Não</label><br>
+        </div>
+
+        <label for="servico">Serviço Específico (opcional)</label>
+        <input type="text" name="servico" id="servico">
+        
+        <input type="submit" value="Realizar cotação" id="botao">
+    </form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 100px;
+    }
+    .item {
+      background-color: #001f3f;
+      color: #ffdd57;
+      padding: 20px;
+      margin: 5px;
+      font-size: 24px;
+      text-align: center;
+      width: 100px; /* Largura fixa para os itens */
+    }
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+  <title>Exemplos Justify-content</title>
+</head>
+<body>
+  <h1>Exemplos de Utilização da Propriedade Justify-content</h1>
+
+  <h2>Justify-content: flex-start</h2>
+  <div class="container" style="justify-content: flex-start;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+  <p>Os blocos são alinhados ao início do contêiner.</p>
+
+  <h2>Justify-content: flex-end</h2>
+  <div class="container" style="justify-content: flex-end;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+  <p>Os blocos são alinhados ao final do contêiner.</p>
+
+  <h2>Justify-content: center</h2>
+  <div class="container" style="justify-content: center;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+  <p>Os blocos são centralizados no contêiner.</p>
+
+  <h2>Justify-content: space-between</h2>
+  <div class="container" style="justify-content: space-between;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+  <p>Os blocos são distribuídos com espaço igual entre eles, com o primeiro bloco no início e o último bloco no final do contêiner.</p>
+
+  <h2>Justify-content: space-around</h2>
+  <div class="container" style="justify-content: space-around;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+  <p>Os blocos são distribuídos com espaço igual ao redor de cada bloco.</p>
+
+  <h2>Justify-content: space-evenly</h2>
+  <div class="container" style="justify-content: space-evenly;">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+  <p>Os blocos são distribuídos com espaço igual entre todos os blocos, incluindo as extremidades do contêiner.</p>
+
+</body>
+</html>

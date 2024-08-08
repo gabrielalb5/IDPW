@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+body{
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+header, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #87A485;
+    margin: 0;
+    color: white;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: -10px;
+}
+nav ul a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+nav ul a:hover{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: #87A485;
+}
+nav li{
+    margin: 10px;
+}
+h2, h3{
+    color: #87A485;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    text-align: justify;
+}
+#criancas{
+    border-radius: 10px;
+    width: 70%;
+}
+.botao{
+    padding: 20px;
+    background-color: #87A485;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.botao:hover{
+    opacity: 70%;
+}
+footer{
+    margin-top: 20px;
+    bottom: 0;
+}
+#ilustracao{
+    height: 50vh;
+}
+section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#dicas{
+    font-size: 25px;
+}
+.filmes{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+figure img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+figcaption{
+    width: 200px;
+    background-color: #87A485;
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+    padding: 5px 0 5px 0;
+}
+#programadores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#skiplink{
+    position: absolute;
+    background-color: #87A485;
+    margin: 150px 0 0 25px;
+}

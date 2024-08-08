@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" value="Gabriel Albino">
+    <title>5.2.4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body{
+            background-color: #fbfbfb;
+            font-family: "Roboto", sans-serif;
+            color: #445964;
+            font-size: 20px;
+        }
+        #logo{
+            display: flex;
+            align-items: center;
+        }
+        main, nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+        }
+        nav ul{
+            list-style: none;
+            gap: 2vw;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: #445964;
+        }
+        #home{
+            display: flex;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+        #direita img{
+            width: 100%;
+        }
+        #esquerda{
+            width: 100%;
+        }
+        #direita{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="logo.png" alt="logo" width="50">
+                <h1>Gabriel Albino</h1>
+            </div>
+            <ul>
+                <a href=""><li>home</li></a>
+                <a href=""><li>portfólio</li></a>
+                <a href=""><li>contato</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div id="esquerda">
+                <p>Olá mundo! Eu sou um</p>
+                <h1>DESENVOLVEDOR<br>DE PÁGINAS WEB</h1>
+                <p>Bem-vindos ao meu site-portfólio</p>
+            </div>
+            <div id="direita">
+                <img src="ilustracao.svg" alt="ilustração">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

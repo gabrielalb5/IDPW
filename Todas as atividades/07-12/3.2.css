@@ -1,0 +1,12 @@
+#tabela_alimentos, #tabela_alimentos td, #tabela_alimentos th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+#tabela_alimentos th{
+    background-color: darkcyan;
+    color: white;
+}
+#tabela_alimentos tr:nth-child(even){
+    background-color: #cecece;
+}

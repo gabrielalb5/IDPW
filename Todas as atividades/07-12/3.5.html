@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Albino">
+    <title>3.5</title>
+    <style>
+        table{
+            margin: 10px;
+        }
+        #table1, #table1 td, #table1 th{
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #table2, #table2 td, #table2 th{
+            padding: 10px;
+            border: 1px solid white;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #table2 thead{
+            background-color: black;
+            color: white;
+        }
+        #table2 tbody tr:nth-child(even){
+            background-color: #f5f5f5;
+        }
+        #table3, #table3 td, #table3 th{
+            padding: 10px;
+            border: none;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #table3 thead{
+            background-color: darkcyan;
+            color: white;
+        }
+        #table3 tbody tr:hover{
+            background-color: #f5f5f5;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <table id="table1">
+        <thead>
+            <tr>
+                <th colspan="5">LOJAS X PONTOS</th>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Loja</th>
+                <th>Diretor</th>
+                <th>Head</th>
+                <th>Pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Saulo</td>
+                <td>Saulo</td>
+                <td>Araraquara Centro</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gustavo</td>
+                <td>Everton</td>
+                <td>Ribeirão Preto</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Gustavo</td>
+                <td>Everton</td>
+                <td>Piracicaba</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gustavo</td>
+                <td>Zé Carmen</td>
+                <td>Rio Preto</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Zura</td>
+                <td>Zura</td>
+                <td>Jundiaí</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Fernando</td>
+                <td>Marcos</td>
+                <td>SP Moema</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="table2">
+        <thead>
+            <th colspan="5">LOJAS X PONTOS</th>
+            <tr>
+                <th>ID</th>
+                <th>Loja</th>
+                <th>Diretor</th>
+                <th>Head</th>
+                <th>Pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Saulo</td>
+                <td>Saulo</td>
+                <td>Araraquara Centro</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gustavo</td>
+                <td>Everton</td>
+                <td>Ribeirão Preto</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Gustavo</td>
+                <td>Everton</td>
+                <td>Piracicaba</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gustavo</td>
+                <td>Zé Carmen</td>
+                <td>Rio Preto</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Zura</td>
+                <td>Zura</td>
+                <td>Jundiaí</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Fernando</td>
+                <td>Marcos</td>
+                <td>SP Moema</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="table3">
+        <colgroup>
+            <col style="background-color: cadetblue;">
+            <col style="background-color: white;">
+            <col style="background-color: white;">
+            <col style="background-color: white;">
+            <col style="background-color: white">
+        </colgroup>
+        <thead>
+            <th colspan="5">LOJAS X PONTOS</th>
+            <tr>
+                <th>ID</th>
+                <th>Loja</th>
+                <th>Diretor</th>
+                <th>Head</th>
+                <th>Pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Saulo</td>
+                <td>Saulo</td>
+                <td>Araraquara Centro</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gustavo</td>
+                <td>Everton</td>
+                <td>Ribeirão Preto</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Gustavo</td>
+                <td>Everton</td>
+                <td>Piracicaba</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Gustavo</td>
+                <td>Zé Carmen</td>
+                <td>Rio Preto</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Zura</td>
+                <td>Zura</td>
+                <td>Jundiaí</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Fernando</td>
+                <td>Marcos</td>
+                <td>SP Moema</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

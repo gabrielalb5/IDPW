@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 300px; /* Altura do contêiner ajustada para 300px */
+      align-content: flex-start; /* Alinhamento padrão */
+    }
+    .item {
+      background-color: #001f3f;
+      color: #ffdd57;
+      padding: 20px;
+      margin: 5px;
+      font-size: 24px;
+      text-align: center;
+      width: calc(25% - 10px); /* Largura dos itens, considerando 75% do espaço da linha */
+    }
+    .item.a { width: calc(20% - 10px); } /* Altura específica para o bloco A */
+    .item.b { width: calc(30% - 10px); } /* Altura específica para o bloco B */
+    .item.c { width: calc(50% - 10px); } /* Altura específica para o bloco C */
+    .item.d { width: calc(40% - 10px); } /* Altura específica para o bloco D */
+    .item.e { width: calc(35% - 10px); } /* Altura específica para o bloco E */
+    .item.f { width: calc(15% - 10px); } /* Altura específica para o bloco F */
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+  <title>Exemplos Align-content</title>
+</head>
+<body>
+  <h1>Exemplos de Utilização da Propriedade Align-content</h1>
+
+  <h2>Align-content: flex-start</h2>
+  <div class="container" style="align-content: flex-start;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+    <div class="item f">F</div>
+  </div>
+  <p>Os blocos são alinhados ao início do contêiner (parte superior) no eixo transversal (perpendicular ao eixo principal).</p>
+
+  <h2>Align-content: flex-end</h2>
+  <div class="container" style="align-content: flex-end;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+    <div class="item f">F</div>
+  </div>
+  <p>Os blocos são alinhados ao final do contêiner (parte inferior) no eixo transversal.</p>
+
+  <h2>Align-content: center</h2>
+  <div class="container" style="align-content: center;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+    <div class="item f">F</div>
+  </div>
+  <p>Os blocos são centralizados no eixo transversal do contêiner.</p>
+
+  <h2>Align-content: space-between</h2>
+  <div class="container" style="align-content: space-between;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+    <div class="item f">F</div>
+  </div>
+  <p>Os blocos são distribuídos com espaço igual entre eles no eixo transversal.</p>
+
+  <h2>Align-content: space-around</h2>
+  <div class="container" style="align-content: space-around;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+    <div class="item f">F</div>
+  </div>
+  <p>Os blocos são distribuídos com espaço igual ao redor de cada bloco no eixo transversal.</p>
+
+  <h2>Align-content: stretch</h2>
+  <div class="container" style="align-content: stretch;">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+    <div class="item f">F</div>
+  </div>
+  <p>Os blocos são esticados para preencher o contêiner no eixo transversal. (Nota: neste caso, o efeito será mais visível se a altura do contêiner for ajustada.)</p>
+
+</body>
+</html>

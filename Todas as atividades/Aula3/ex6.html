@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Gabriel Albino">
+    <title>Food Truck do Lemão</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #F5F5F5;
+        }
+        article{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        dd{
+            font-style: italic;
+            margin-left: 0;
+            margin-bottom: 10px;
+            color: #556678;
+        }
+        h3{
+            margin-bottom: -13px;
+        }
+        .acompanhamentos ul, .pratos ul{
+            margin-top: -5px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 40%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+        }
+        div img{
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        h1{
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Food Truck do Lemão</h1>
+    <p>Comida típica Alemã</p>
+    <article>
+        <div class="salsichas">
+            <img src="img/salsichas.jpg" alt="salsichas">
+            <h3>SALSICHAS</h3>
+            <dl>
+                <dt>Baviera - R$ 15</dt>
+                <dd>Carne de vitela</dd>
+                <dt>Berlim - R$ 12</dt>
+                <dd>Carne de porco, curry e ketchup</dd>
+                <dt>Clássica - R$ 10</dt>
+                <dd>Carne de porco e vitela</dd>
+            </dl>
+        </div>
+        <div class="acompanhamentos">
+            <img src="img/chucrute.jpg" alt="chucrute">
+            <h3>ACOMPANHAMENTOS</h3>
+            <dl>
+                <dt>Chucrute (Sauerkraut) </dt>
+                <dd>Conserva de repolho fermentado</dd>
+                    <ul>
+                    <li>Repolho clássico - R$ 5</li>
+                    <li>Repolho roxo - R$ 6</li>
+                    </ul>
+            </dl>
+        </div>
+        <div class="pretzels">
+            <img src="img/pretzel.jpg" alt="pretzels">
+            <h3>PRETZELS (Brezel)</h3>
+            <ul>
+                <li>Salgado - R$ 8</li>
+                <li>Chocolate - R$ 10</li>
+                <li>Açúcar e canela - R$ 7</li>
+            </ul>
+        </div>
+        <div class="pratos">
+            <img src="img/schnitzel.jpg" alt="schnitzel">    
+            <h3>PRATOS</h3>
+            <dl>
+                <dt>Spätlze - R$ 18</dt>
+                <dd>Macarrão (ovo e farinha de trigo), molho de queijo e cebola frita</dd>
+                <dt>Schnitzel</dt>
+                <dd>Carne empanada, batatas fritas e limão</dd>
+                <ul>
+                    <li>Carne de porco - R$ 22</li>
+                    <li>Carne de vitela - R$ 25</li>
+                </ul>
+            </dl>
+        </div>
+        <div class="sobremesas">
+            <img src="img/strudel.jpg" alt="strudel">
+            <h3>SOBREMESAS</h3>
+            <dl>
+                <dt>Strudel de Maçã - R$ 12</dt>
+                <dd>Massa folhada polvilhada com açúcar de confeiteiro, recheada com maçã, açúcar, canela, acompanhada de sorvete de creme</dd>
+            </dl>
+        </div>
+        <div class="bebidas">
+            <img src="img/cerveja.jpg" alt="cerveja">
+            <h3>BEBIDAS</h3>
+            <ul>
+                <li>Refrigerante - R$ 5</li>
+                <li>Cerveja Alemã - R$ 10</li>
+                <li>Água Mineral - R$ 3</li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>

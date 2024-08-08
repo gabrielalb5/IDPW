@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Albino">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <div id="titulo">
+            <h1>Formulário</h1>
+            <p>Esse formulário contém todos os campos estudados e foi estilizado com css externo.</p>
+        </div>
+        <form action="" method="post">
+            <label for="text">Digite seu nome (TEXT)</label>
+            <input type="text" id="text" name="usuario" placeholder="Fulano da Silva" autofocus required>
+
+            <label for="email">Digite seu e-mail (EMAIL)</label>
+            <input type="email" id="email" name="email" placeholder="fulano.silva@mail.com" required>
+
+            <label for="password">Digite uma senha (PASSWORD)</label>
+            <input type="password" id="password" name="senha" placeholder="Mínimo de 8 caracteres" minlength="8" required>
+
+            <label for="nascimento">Data de nascimento (DATE)</label>
+            <input type="date" name="nascimento" id="nascimento" required>
+
+            <label>Qual seu gênero? (RADIO)</label>
+            <div id="genero">
+                <div class="opcao-genero">
+                    <input type="radio" id="M" name="genero" value="M">
+                    <label for="M">Masculino</label>
+                </div>
+                <div class="opcao-genero">
+                    <input type="radio" id="F" name="genero" value="M">
+                    <label for="F">Feminino</label>
+                </div>
+                <div class="opcao-genero">
+                    <input type="radio" id="NB" name="genero" value="NB">
+                    <label for="NB">Não-binário</label>
+                </div>
+            </div>
+
+            <label for="UF">Qual seu estado? (SELECT)</label>
+            <select id="UF" name="UF">
+                <option value="">Selecione...</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            <label>Escolha seus hobbies (CHECKBOX)</label>
+            <div id="hobbies">
+                <div class="opcao-hobbies">
+                    <input type="checkbox" id="esporte" name="opcao" value="esporte">
+                    <label for="esporte">Esporte</label>
+                </div>
+                <div class="opcao-hobbies">
+                    <input type="checkbox" id="leitura" name="opcao" value="leitura">
+                    <label for="leitura">Leitura</label>
+                </div>
+                <div class="opcao-hobbies">
+                    <input type="checkbox" id="filmes_series" name="opcao" value="filmes_series">
+                    <label for="filmes_series">Filmes e séries</label>
+                </div>
+                <div class="opcao-hobbies">
+                    <input type="checkbox" id="instrumento" name="opcao" value="instrumento">
+                    <label for="instrumento">Instrumento musical</label>
+                </div>
+                <div class="opcao-hobbies">
+                    <input type="checkbox" id="desenho" name="opcao" value="desenho">
+                    <label for="desenho">Desenho</label>
+                </div>
+            </div>
+            
+            <label for="cor">Qual sua cor favorita? (COLOR)</label>
+            <p>Clique no retângulo abaixo para escolher</p>
+            <input type="color" id="color" name="color">
+
+            <label for="number">Qual seu número favorito? (NUMBER)</label>
+            <input type="number" id="number" name="number" step=".01" placeholder="Digite um número">
+            
+            <label for="textarea">Deixe um comentário (TEXTAREA)</label>
+            <textarea name="textarea" id="textarea" placeholder="Gostei desse formulário porque..."></textarea>
+
+            <label for="busca">Essa é uma caixa de busca (SEARCH)</label>
+            <input type="search" id="busca" name="busca" placeholder="Pesquisar">
+            <br>
+
+            <input type="button" id="btn1" name="btnTeste" value="Sou apenas um botão">
+            <input type="submit" id="btn2" name="btnEnviar" value="Enviar formulário">
+            <input type="reset" id="btn3" name="btnReset" value="Apagar tudo">
+        </form>
+    </main>
+    <footer>
+        <p>Gabriel Albino - Introdução ao Desenvolvimento de Páginas Web - TSI</p>
+        <p>Copyright© 2024 IFSP - Campus Araraquara</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      background-color: #e0e0e0;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 200px; /* Altura do contêiner ajustada para 200px */
+    }
+    .item {
+      background-color: #001f3f;
+      color: #ffdd57;
+      padding: 20px;
+      margin: 5px;
+      font-size: 24px;
+      text-align: center;
+    }
+    .flex-grow {
+      width: 50px; /* Largura base para os itens */
+    }
+    .flex-shrink {
+      width: 100px; /* Largura base para os itens */
+    }
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
+  <title>Exemplos Propriedades dos Itens Flexíveis</title>
+</head>
+<body>
+  <h1>Exemplos de Utilização das Propriedades dos Itens Flexíveis</h1>
+
+  <h2>Order</h2>
+  <div class="container">
+    <div class="item" style="order: 3;">1</div>
+    <div class="item" style="order: 1;">2</div>
+    <div class="item" style="order: 2;">3</div>
+    <div class="item" style="order: 4;">4</div>
+    <div class="item" style="order: 6;">5</div>
+    <div class="item" style="order: 5;">6</div>
+  </div>
+  <p>Os blocos são ordenados de acordo com o valor da propriedade `order`.</p>
+
+  <h2>Flex-grow</h2>
+  <div class="container">
+    <div class="item flex-grow" style="flex-grow: 1;">1</div>
+    <div class="item flex-grow" style="flex-grow: 1;">2</div>
+    <div class="item flex-grow" style="flex-grow: 1;">3</div>
+    <div class="item flex-grow" style="flex-grow: 1;">4</div>
+    <div class="item flex-grow" style="flex-grow: 1;">5</div>
+    <div class="item flex-grow" style="flex-grow: 2;">6</div>
+  </div>
+  <p>Os itens 1, 2, 3, 4 e 5 têm o mesmo valor de `flex-grow`, então eles serão ampliados igualmente. O item 6 tem um valor maior e se expandirá mais.</p>
+
+  <h2>Flex-shrink</h2>
+  <div class="container">
+    <div class="item flex-shrink" style="flex-shrink: 1; width: 100px;">1</div>
+    <div class="item flex-shrink" style="flex-shrink: 1; width: 100px;">2</div>
+    <div class="item flex-shrink" style="flex-shrink: 2; width: 100px;">3</div>
+    <div class="item flex-shrink" style="flex-shrink: 1; width: 100px;">4</div>
+    <div class="item flex-shrink" style="flex-shrink: 2; width: 100px;">5</div>
+    <div class="item flex-shrink" style="flex-shrink: 1; width: 100px;">6</div>
+  </div>
+  <p>Os itens 3 e 5 têm um valor maior para `flex-shrink`, então ficarão mais retraídos em comparação com os outros itens quando o espaço é limitado.</p>
+
+  <h2>Flex-basis</h2>
+  <div class="container">
+    <div class="item" style="flex-basis: 50px;">1</div>
+    <div class="item" style="flex-basis: 100px;">2</div>
+    <div class="item" style="flex-basis: 150px;">3</div>
+    <div class="item" style="flex-basis: 200px;">4</div>
+    <div class="item" style="flex-basis: 250px;">5</div>
+    <div class="item" style="flex-basis: 300px;">6</div>
+  </div>
+  <p>Os blocos são definidos com uma base de largura específica utilizando a propriedade `flex-basis`.</p>
+
+  <h2>Align-self</h2>
+  <div class="container" style="height: 300px;"> <!-- Altura do contêiner ajustada para 300px -->
+    <div class="item" style="align-self: flex-start;">1</div>
+    <div class="item" style="align-self: flex-end;">2</div>
+    <div class="item" style="align-self: center;">3</div>
+    <div class="item" style="align-self: baseline;">4</div>
+    <div class="item" style="align-self: stretch;">5</div>
+    <div class="item" style="align-self: flex-start; height: 100px;">6</div> <!-- Altura específica para o último bloco 100px -->
+  </div>
+  <p>Os blocos são alinhados individualmente no eixo transversal utilizando a propriedade `align-self`.</p>
+
+</body>
+</html>

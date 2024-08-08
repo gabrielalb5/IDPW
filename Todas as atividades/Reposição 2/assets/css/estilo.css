@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0; /*Define as margens gerais como 0*/
+  padding: 0; /*Define o preenchimento geral como 0*/
+  font-family: "Poppins", sans-serif; /*Define a fonte do texto como Poppins, importada na primeira linha, e caso não carregue, utiliza a sans-serif*/
+}
+
+body{
+    display: flex; /*Torna os itens dentro dessa seção flexíveis*/
+    justify-content: center; /*Alinha os itens com o eixo principal (coluna)*/
+    background-color: #f5f5f5; /*Define a cor de fundo como um cinza*/
+    flex-direction: column; /*Muda a direção do eixo principal do flex para uma coluna, e não linha*/
+    align-items: center; /*Alinha os itens no eixo transversal*/
+}
+
+main{ /*Formulário*/
+    display: flex; /*Torna os itens dentro dessa seção flexíveis*/
+    flex-direction: column; /*Muda a direção do eixo principal do flex para uma coluna, e não linha*/
+    align-items: center; /*Alinha os itens no eixo transversal*/
+    width: 400px; /*Define o tamanho do formulário com 400px, fixo*/
+    margin: 30px; /*Define uma margem de 30px para o formulário*/
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.212); /*Define uma sombra com deslocamento de 10px nos eixos X e Y, que se espalha por 15px e tem a cor definida como uma espécie de preto com baixa opacidade*/
+    background-color: white; /*Define a cor do fundo do formulário como branca*/
+    border-radius: 20px; /*Adiciona uma borda redonda de 20px*/
+    padding: 0 0 40px 0; /*Adiciona um preenchimento de 40px somente na parte inferior*/
+}
+
+#titulo{ /*Área do topo do formulário*/
+    display: flex; /*Torna os itens dentro dessa seção flexíveis*/
+    background-color: #167257; /*Cor de fundo do título do formulário*/
+    color: white; /*Cor do texto do título do formulário*/
+    justify-content: center; /*Alinha os itens com o eixo principal (coluna)*/
+    align-items: center; /*Alinha os itens no eixo transversal*/
+    flex-direction: column; /*Muda a direção do eixo principal do flex para uma coluna, e não linha*/
+    padding: 10px; /*Adiciona um preenchimento de 10px*/
+    border-radius: 20px 20px 0 0; /*Adiciona uma borda redonda de 20px apenas nos cantos superiores*/
+}
+
+p{
+    text-align: center; /*Alinha todos os parágrafos no centro*/
+}
+
+form{ /*Itens do formulário*/
+    display: flex; /*Torna os itens dentro dessa seção flexíveis*/
+    flex-direction: column; /*Muda a direção do eixo principal do flex para uma coluna, e não linha*/
+}
+
+label{ /*Todos os rótulos*/
+    margin: 30px 0 10px 0; /*Recebem margem de 30px no topo e 10px na parte inferior*/
+}
+
+.opcao-genero, .opcao-hobbies{ /*Radio e Checkbox (label e input)*/
+    display: block; /*Alinha o labels e inputs respectivos cada um em uma linha*/
+}
+
+input, select, textarea{ /*Todos os campos do formulário*/
+    background-color: white; /*Define a cor de fundo como branco*/
+    border: none; /*Remove a borda padrão*/
+    padding: 10px; /*Adiciona um preenchimento de 10px*/
+    border-radius: 10px; /*Adiciona uma borda aarredondada em todos os cantos*/
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.212); /*Define uma sombra interna com deslocamento de 2px nos eixos X e Y, que se espalha por 2px e tem a cor definida como uma espécie de preto com baixa opacidade*/
+    background-color: #f5f5f5; /*Define a cor de fundo como um cinza*/
+}
+
+input:hover, select:hover, textarea:hover{ /*Todos os campos do formulário quando passa o mouse por cima*/
+    opacity: 50%; /*Diminui a opacidade/Aumenta a transparência para 50% quando o mouse está sobre o elemento*/
+    cursor: pointer; /*O cursor do mouse muda sua forma para um dedo apontando, indicado par áreas com interação, usado em links por exemplo*/
+}
+
+#color, .opcao-genero input, .opcao-hobbies input, #botoes input{ /*Removendo exceções das condições de inputs anteriores*/
+    background-color: white; /*Define o fundo do elemento como brancos*/
+    border: none; /*Remove as bordas*/
+    box-shadow: none; /*Remove as sombras*/
+}
+
+#color{/*Input de cor*/
+    width: 100%; /*Define a largura do item com 100% do espaço que pode ocupar*/
+    height: 50px; /*Define a altura fixa de 50px*/
+    padding: 0; /*Remove o preenchimento*/
+}
+
+#btn1, #btn2, #btn3{ /*Botões*/
+    margin: 10px 0; /*Adiciona uma margem de 10px no topo e na parte inferior dos botões*/
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.212); /*Define uma sombra com deslocamento de 5px nos eixos X e Y, que se espalha por 5px e tem a cor definida como uma espécie de preto com baixa opacidade*/
+    color: white; /*Define a cor do texto como branca*/
+}
+
+/*Características individuais dos botões*/
+#btn1{
+    background-color: #5F8591; /*Define a cor de fundo como um azul*/
+}
+#btn2{
+    background-color: #5F916A; /*Define a cor de fundo como um verder*/
+}
+#btn3{
+    background-color: #915F60; /*Define a cor de fundo como um rosa/vermelho*/
+}
+
+footer{ /*Rodapé*/
+    background-color: #167257; /*Define a cor de fundo como um verde*/
+    color: white; /*Define a cor do texto como branca*/
+    width: 100%; /*Define a largura do item com 100% do espaço que pode ocupar*/
+    text-align: center; /*Alinha todos os parágrafos no centro*/
+    padding: 20px 0; /*Preenche com 20px o topo e a parte inferior do rodapé*/
+    margin: 20px 0 0 0; /*Dá uma margem de 20px para o topo do rodapé*/
+}
+
+#textarea{ /*Alterações do textarea*/
+    max-width: 310px; /*Define uma largura máxima de 310px, para não extravasar o tamanho do formulário*/
+    min-height: 50px; /*Define uma altura mínima de 50px*/
+}
+
+/*REFERÊNCIAS*/
+/*Consultei o https://www.w3schools.com/html/html_forms.asp e todas as páginas da seção "HTML Forms" desse site.
+Entretanto, não usei nenhuma referência de estilo específica, fiz o design com base nos meus conhecimentos prévios.*/

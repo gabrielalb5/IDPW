@@ -1,0 +1,218 @@
+<!-- Não havia compreendido que o intuito do skiplink era ser acessado pela tecla tab quando implementei em outro exercício.
+Agora entendi e faz muito mais sentido. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" value="Gabriel Albino">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="mascote.avif">
+    <title>Olimpíadas 2024</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins",sans-serif;
+        }
+        #conteudo, main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #conteudo{
+            width: 50%;
+        }
+        article img{
+            max-height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+        nav{
+            background-color: #194171;
+            padding: 10px 20px;
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover{
+            opacity: 75%;
+        }
+        nav img{
+            height: 50px;
+        }
+        p{
+            margin: 20px 0;
+            text-align: justify;
+        }
+        p#subtitulo{
+            color: grey;
+            font-size: small;
+            margin: 5px 0;
+        }
+        p#autoria{
+            margin: 0;
+        }
+        p#data{
+            margin: 0 0 20px 0;
+            font-size: small;
+        }
+        #cards img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+        #cards img:hover{
+            box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.25);
+            cursor: pointer;
+        }
+        #cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0 0 0;
+        }
+        #live{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        #live span{
+            color: red;
+        }
+        #live span{
+            animation: blink 1.5s infinite;
+            animation-fill-mode: both;
+        }
+        @keyframes blink {
+            0% { opacity: 0 }
+            50% { opacity: 1 }
+            100% { opacity: 0 }
+        }
+        .comentario{
+            background-color: #194171;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .skiplink{
+            position: absolute;
+            margin-top: -200px;
+            color: #194171;
+            text-decoration: none;
+            background-color: white;
+            border: 1px #194171;
+            padding: 20px;
+        }
+        .skiplink:focus{
+            display: flex;
+            margin-top: 100px;
+        }
+        #mascote{
+            height: 100px;
+            margin: 0 0 30px 0;
+        }
+        figcaption{
+            color: grey;
+            font-size: small;
+        }
+        @media(max-width: 600px){
+            #cards #canais{
+                display: flex;
+                flex-direction: column;
+            }
+            #conteudo{
+                width: 80%;
+            }
+            #cards img{
+                box-shadow: 1px 3px 10px 0px rgba(0,0,0,0.25);
+            }
+            #cards img:hover{
+                opacity: 50%;
+            }
+            #live{
+                margin: 0 0 10px -10px;
+            }
+            #cards{
+                margin: 20px 0;
+            }
+            nav ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skiplink" href="#noticia">Ir direto ao conteúdo principal</a>
+    <header>
+        <nav>
+            <ul>
+                <a href=""><img src="olimpiada.png" alt="aros olímpicos"></a>
+                <a href=""><li>Calendário</li></a>
+                <a href=""><li>Medalhas</li></a>
+                <a href=""><li>Loja</li></a>
+                <a href=""><li>Assistir</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cards">
+            <div id="live">
+                <span class="material-symbols-outlined">radio_button_checked</span><h3>Ao vivo agora</h3>
+            </div>
+            <div id="canais">
+                <a href=""><img src="sportv.jpg" alt=""></a>
+                <a href=""><img src="globoplay.png" alt=""></a>
+                <a href=""><img src="cazetv.png" alt=""></a>
+            </div>
+        </section>
+        <section id="conteudo">
+            <article id="noticia">
+                <h2>Rebeca Andrade é ouro no solo em Paris e se torna a maior medalhista brasileira dos Jogos Olímpicos</h2>
+                <p id="subtitulo">Com a medalha de ouro desta segunda (5), Rebeca soma seis pódios: 2 em Tóquio, 4 em Paris.</p>
+                <p id="autoria">Jornal Nacional</p>
+                <p id="data">05/08/2024 22h05 - Atualizado há um dia</p>
+                <figure>
+                    <img src="rebeca.webp" alt="Rebeca Andrade com a medalha de ouro">
+                    <figcaption>A história da conquista do ouro olímpico no solo de Rebeca Andrade</figcaption>
+                </figure>
+                <p>A maior alegria do dia nos Jogos de Paris foi a medalha de ouro da Rebeca Andrade. Mas antes da vitória no solo, ela precisou superar um resultado inesperado na trave.</p>
+                <p>Os olhos acompanham e se arregalam. É difícil não se espantar, sofrer junto. Final, chance única, que não permite erros. Mas os erros fazem parte da rotina de quem escolheu este esporte. Quedas em todos os aparelhos vão deixando as medalhas mais distantes.</p>
+                <p>As notas da ginástica combinam o grau de dificuldade dos movimentos com a maneira como estes movimentos foram executados. Assim, perder o equilíbrio na trave, como aconteceu com a brasileira Júlia Soares, significa adiar o sonho de um pódio.</p>
+                <p class="comentario">"Eu confesso que fiquei nervosa, minha primeira final olímpica. Então, para mim é gratificante saber que todo trabalho valeu a pena. Cometi erros, mas acontece”, diz Júlia Soares, ginasta da seleção brasileira.</p>
+                <p>Júlia foi a sétima colocada entre as oito finalistas, e viu a supercampeã Simone Biles cair também. A americana terminou em quinto.</p>
+                <p>Se repetisse a nota da fase de classificação, 14.500, Rebeca Andrade levaria o ouro na prova. Ela não teve falhas visíveis, mas apresentou uma série com um grau de dificuldade mais baixo, deixou de apresentar alguns elementos. O 13.933 acabou sendo insuficiente para o pódio. A brasileira terminou em quarto lugar.</p>
+                <p class="comentario">"Último dia de Olimpíada, falei: ‘Vamos aproveitar, Rebeca, faz suas séries, você não falhou nenhum dia. O resultado o árbitro dá, é tudo pertinho, final é assim mesmo”, diz Francisco Porath, técnico da seleção brasileira de ginástica.</p>
+                <p>A italiana Alice D'Amato ficou com o ouro. Prata para a chinesa Yaqin Zhou e bronze para outra italiana, Manila Esposito.</p>
+                <p>A medalha na trave acabou não vindo por muito pouco. Mas era preciso ter calma, respirar fundo porque o melhor, mas o melhor mesmo, ainda estava por vir. Rebeca foi a segunda ginasta a se apresentar no solo. A cada sequência acrobática concluída, confiança e esperança cresciam.</p>
+                <p>No embalo de Rebeca até Simone Biles foi para o baile e curtiu o som de Anitta e Beyoncé. Decolagens e aterrissagens perfeitas para deixar o país inteiro nas nuvens. O voo rumo ao ouro, agora, ia se tornando real.</p>
+                <p>Nota 14.166. Óculos para conferir se era aquilo mesmo. E era. Liderança. Mas ainda faltavam sete adversárias. Um pezinho para fora aqui, outro ali. Na espera, houve momentos de relaxamento, houve momentos em que a tensão transbordou. Até que Simone Biles não fez uma, mas duas faltas com altos descontos na pontuação: pisar com os dois pés fora da área válida de competição no tablado.</p>
+                <p>Enquanto esperava a nota, a americana chegou a comentar:</p>
+                <p class="comentario">"Acho que a Rebeca levou essa".</p>
+                <p>E veio o momento em que o mundo parou para aplaudir a nova campeã olímpica do solo. Aplaudir e reverenciar, como fizeram as americanas Simone Biles, medalha de prata, e Jordan Chiles, de bronze.</p>
+                <p>O reconhecimento à atleta recordista absoluta de medalhas do esporte olímpico brasileiro. Com o ouro desta segunda-feira (5), Rebeca soma seis pódios: dois em Tóquio, quatro em Paris.</p>
+                <p class="comentario">"Eu estou muito orgulhosa. Orgulhosa do pódio, orgulhosa das mulheres, orgulhosa de mim, de tudo o que a gente está construindo. Eu estou inteira, eu estou aqui, eu estou feliz. Eu curti, eu vivi Paris, eu vivi tudo e terminei com chave de ouro. Então, nossa, eu estou explodindo”, comemora Rebeca Andrade, maior medalhista olímpica do Brasil.</p>
+                <p>E se Rebeca e a mãe se emocionaram separadas ouvindo o hino nacional, o abraço de ouro entre elas deu um nó na garganta do Brasil inteiro. A filha da Rosa conseguiu - de novo.</p>
+            </article>
+        </section>
+        <img src="mascote.avif" alt="mascote 2024" id="mascote">
+    </main>
+</body>
+</html>

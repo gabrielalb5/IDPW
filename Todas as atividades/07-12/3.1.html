@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Albino">
+    <title>3.1</title>
+</head>
+<body>
+    <section>
+        <h1>Definindo &lt;colgroup&gt; e &lt;col&gt;</h1>
+        <p>As tags &lt;colgroup&gt; e &lt;col&gt; são utilizadas na parte de estilização de tabelas, definindo propriedades sobre colunas.<br> O &lt;colgroup&gt; cria um grupo de tabelas que receberam estilos específicos das tags &lt;col&gt;, e devem ser definidas após a tag caption, caso seja utilizada, mas antes de elementos como thead, tr, th, td, etc.</p>
+        <a href="https://portaldefinancas.com/html/colgroup.html" target="_blank">Fonte</a>
+        <table>
+            <caption>Exemplo de tabela com &lt;colgroup&gt;</caption>
+            <colgroup>
+                <col style="background-color: cadetblue;">
+                <col style="font-style: italic;">
+                <col style="background-color: white;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Ranking</th>
+                    <th>Nome</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>Gabriel</th>
+                    <th>300</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Ana</th>
+                    <th>200</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>Bruno</th>
+                    <th>100</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Código</h2>
+        <section>
+    <pre>
+        &lt;table&gt;
+            &lt;caption&gt;Exemplo de tabela com &amp;lt;colgroup&amp;gt;&lt;/caption&gt;
+            &lt;colgroup&gt;
+                &lt;col style="background-color: cadetblue;"&gt;
+                &lt;col style="font-style: italic;"&gt;
+                &lt;col style="background-color: white;"&gt;
+            &lt;/colgroup&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Ranking&lt;/th&gt;
+                    &lt;th&gt;Nome&lt;/th&gt;
+                    &lt;th&gt;Pontos&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;1&lt;/th&gt;
+                    &lt;th&gt;Gabriel&lt;/th&gt;
+                    &lt;th&gt;300&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;2&lt;/th&gt;
+                    &lt;th&gt;Ana&lt;/th&gt;
+                    &lt;th&gt;200&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;3&lt;/th&gt;
+                    &lt;th&gt;Bruno&lt;/th&gt;
+                    &lt;th&gt;100&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    </pre>
+        </section>
+    </section>
+</body>
+</html>
