@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Albino">
+    <title>Mobile First</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+            body{
+                font-family: "Poppins", sans-serif;
+                color: #445964;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: justify;
+            }
+            p, li{
+                opacity: 70%;
+            }
+            main{
+                width: 80%;
+            }
+            #aviso{
+                opacity: 30%;
+            }
+            pre{
+                color:forestgreen;
+                display: flex;
+                font-size: 12px;
+            }
+            h1,h2{
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+            }
+            img{
+                width: 100%;
+            }
+        @media (min-width: 1024px) {
+            body{
+                background-color: #445964;
+                font-family: "Roboto", sans-serif;
+                color: #f5f5f5;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: justify;
+            }
+            p,li{
+                opacity: 100%;
+            }
+            main{
+                width: 60%;
+            }
+            pre{
+                color: #f5f5f5;
+                font-weight: bold;
+                display: flex;
+                font-size: 20px;
+            }
+            h1,h2{
+                text-align: start;
+            }
+            img{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Mobile First</h1>
+    <p id="aviso">Essa página tem estilo alterado de acordo com a responsividade.</p>
+    <img src="ilustracao.png" alt="ilustração">
+    <p>O conceito de <i>mobile first</i> foi introduzido pela primeira vez por Luke Wroblewski em seu livro, Mobile First, em 2009. O termo de forma literal significa “móvel primeiro”, fazendo referência à adaptação do design web de desktop para dispositivos móveis. No livro são apresentadas estratégias de design e usabilidade para essa nova realidade. Desde então, o termo foi usado para explicar uma estratégia que prioriza experiências em telas menores antes das telas maiores.</p>
+    <p>No fim de 2016, o Google anunciou o lançamento gradual e o teste de um novo algoritmo móvel chamado <i>Mobile First Indexing</i>. Isso significa que o Google passou a colocar ainda mais foco nos dispositivos móveis como uma “entidade autônoma” e começou a oferecer benefícios de classificação para a criação de site responsivo.</p>
+    <h2>Vantagens</h2>
+    <ul>
+        <li>Melhoria da Experiência do Usuário: Sites são otimizados para dispositivos móveis, aumentando a satisfação e engajamento.</li>
+        <li>Desempenho: Sites Mobile First geralmente são mais rápidos e leves.</li>
+        <li>SEO: Sites com boa performance em mobile têm melhor classificação no Google.</li>
+        <li>Design Focado: Força um design mais limpo e intuitivo.</li>
+    </ul>
+    <h2>Desvantagens</h2>
+    <ul>
+        <li>Desafios de Implementação: Requer atenção extra para garantir que todos os recursos funcionem bem em dispositivos móveis.</li>
+        <li>Limitações de Design: Pode limitar algumas funcionalidades que são viáveis apenas em telas maiores.</li>
+        <li>Custos: Pode exigir mais tempo e recursos para desenvolvimento.</li>
+    </ul>
+    <h2>Formas de Implementação</h2>
+    <ol>
+        <li>Design Responsivo: Criação de layouts adaptáveis usando CSS Flexbox e Grid.</li>
+        <li>CSS Media Queries: Permitem aplicar estilos diferentes com base no tamanho da tela. Exemplo:</li>
+        <pre>
+/* Estilos para dispositivos móveis */
+body {
+    font-size: 16px;
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+        </pre>
+        <li>Progressive Enhancement: Começar com uma base funcional e adicionar recursos conforme o dispositivo permite.</li>
+        <li>Testes Regulares: Verificar o design em vários dispositivos e emuladores.</li>
+    </ol>
+    <p>FONTE: <a href="https://www.dio.me/articles/o-que-e-mobile-first">https://www.dio.me/articles/o-que-e-mobile-first</a></p>
+    </main>
+</body>
+</html>
